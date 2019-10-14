@@ -12,3 +12,11 @@ for _ in range(int(input())):
 #SomeRandomStuff
 #Check for all possible floating expressions
 #requirements for a number to be considered as floating.
+# Number can start with +, - or . symbol.
+#For example:
+#✔ +4.50
+#✔-1.0
+#✔.5
+#✔-.7
+#✔+.4
+#✖-+4.5
