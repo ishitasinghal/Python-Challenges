@@ -20,3 +20,9 @@ for _ in range(int(input())):
 #✔-.7
 #✔+.4
 #✖-+4.5
+#Number must contain at least  decimal value.
+#For example:
+#✖ 12.
+#✔12.0  
+ #Number must have exactly one . symbol.
+ #Number must not give any exceptions when converted using float(n).
