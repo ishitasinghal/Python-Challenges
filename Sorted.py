@@ -5,4 +5,7 @@
 #https://www.hackerrank.com/challenges/python-sort-sort/problem
 
 #Code
-
+def athlete(arr, q):
+    arr1 = sorted(arr,key=lambda x: x[q])
+    for i in arr1:
+        print(*i)
