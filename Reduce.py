@@ -17,3 +17,6 @@ if __name__ == '__main__':
         fracs.append(Fraction(*map(int, input().split())))
     result = product(fracs)
     print(*result)
+
+    #https://www.hackerrank.com/challenges/reduce-function/problem
+    #link to details.
