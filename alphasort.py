@@ -8,3 +8,6 @@
 n = ''.join(sorted(input()))
 print(n)
 
+# n = ''.join(sorted(input()))
+# print(n)
+print(*sorted(input(), key=lambda c: (-ord(c) >> 5, c in '02468', c)), sep='')
