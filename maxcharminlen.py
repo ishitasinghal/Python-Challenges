@@ -11,4 +11,9 @@ def dischar(str,n):
 
 def subs(str):
     n=len(str)
+    maxdis=dischar(str,n)
+    minl=n
+    for i in range(n):
+          for j in range(n):
+                   subs
         
