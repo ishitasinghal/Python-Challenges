@@ -15,5 +15,12 @@ def subs(str):
     minl=n
     for i in range(n):
           for j in range(n):
-                   subs
+                   subs=str[i:j]
+                   subs_length=len(subs)
+                   sub_dist_char=max_distinct_char(subs,subs_length)
+                   if(subs_length<minl and max_distinct==sub_dist_char):
+                   minl=subslength
+            return minl
+str="abcda"
+                   l
         
