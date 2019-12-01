@@ -20,9 +20,9 @@ import sys
 # Complete the minimumBribes function below.
 def minimumBribes(q):
     flist=[]
-    nq = sort(q)
+    nq = sorted(q)
     for i in range(len(q)):
-        flist.append(nq[i]-q[i])
+        flist.append(q[i]-nq[i])
     print(flist)
 
 if __name__ == '__main__':
@@ -34,3 +34,4 @@ if __name__ == '__main__':
         q = list(map(int, input().rstrip().split()))
 
         minimumBribes(q)
+
