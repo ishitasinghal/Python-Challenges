@@ -18,6 +18,7 @@ import re
 import sys
 
 # Complete the minimumBribes function below.
+#main function
 def minimumBribes(q):
     flist=[]
     nq = sorted(q)
