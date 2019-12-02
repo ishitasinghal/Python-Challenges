@@ -18,13 +18,14 @@ import re
 import sys
 
 # Complete the minimumBribes function below.
-#main function
 def minimumBribes(q):
-    flist=[]
-    nq = sorted(q)
-    for i in range(len(q)):
-        flist.append(q[i]-nq[i])
-    print(flist)
+    count=0
+    for i in range(1,len(q)+1):
+        if(q[i]-i>2):
+            print("Too chaotic")
+        elif(q[i]-i):
+            count=count+1
+    print(count)
 
 if __name__ == '__main__':
     t = int(input())
@@ -35,4 +36,3 @@ if __name__ == '__main__':
         q = list(map(int, input().rstrip().split()))
 
         minimumBribes(q)
-
