@@ -17,13 +17,18 @@ import sys
 # Complete the minimumSwaps function below.
 def minimumSwaps(arr):
     swaps=0
+    temp = [0] * (len(arr) + 1)
+    for pos, val in enumerate(arr):
+        temp[val] = pos
+        pos += 1
     for i in range(len(arr)):
-        for j in range(len(arr)-1):
-            if(arr[j]>arr[j+1]):
-                temp = arr[j]
-                arr[j]=arr[j+1]
-                arr[j+1]=temp
-                swaps=swaps+1
+        if arr[i] != i+1:
+            swaps += 1
+            t = arr[i]
+            arr[i] = i+1
+            arr[temp[i+1]] = t
+            temp[t] = temp[i+1]
+        
     return(swaps)
 
 if __name__ == '__main__':
@@ -38,3 +43,4 @@ if __name__ == '__main__':
     fptr.write(str(res) + '\n')
 
     fptr.close()
+
