@@ -7,3 +7,4 @@ for i in range(len(possible)):
     if(possible[i+2]-possible[i]==2):
         p2.append
 print(possible)
+print(safepath)
