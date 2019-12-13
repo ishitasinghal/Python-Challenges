@@ -1,16 +1,11 @@
-def jumpingOnClouds(c):
-    safepath = [i for i in range(len(c)) if(c[i]==0)]
-    possible=[]
-    for i in safepath:
-        if(i+2 in safepath):
-            possible.append(i)
-            possible.append(i+2)
-            i=i+2
-        else:
-            possible.append(i)
-            possible.append(i+1)
-            i=i+1
-            
-    return(possible)
-c=[0,0,0,0,1,0]
-print(jumpingOnClouds(c))
+safepath = [i for i in range(len(c)) if(c[i]==0)]
+    possible=[safepath[0]]
+    step=0
+    while(step!=len(safepath)):
+        if(safepath[step]+2 in safepath):
+            possible.append(safepath[step]+2)
+            step=step+2
+        elif(safepath[step]+1 in safepath):
+            possible.append(safepath[step]+1)
+            step=step+1
+    return(len(possible))
