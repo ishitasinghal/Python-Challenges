@@ -1,8 +1,16 @@
-c = [0, 0, 0, 1, 0, 0]
-safepath = [i for i in range(len(c)) if(c[i]==0)] #making a list of the possible safepaths
-possible = [safepath[j] for j in range(len(safepath)-1) if(safepath[j+1]-safepath[j])<=2]
-p2=[]
-for i in range(len(possible)):
-    if(possible[i+2]-possible[i]==2):
-        p2.append
-print(safepath)
+def jumpingOnClouds(c):
+    safepath = [i for i in range(len(c)) if(c[i]==0)]
+    possible=[]
+    for i in safepath:
+        if(i+2 in safepath):
+            possible.append(i)
+            possible.append(i+2)
+            i=i+2
+        else:
+            possible.append(i)
+            possible.append(i+1)
+            i=i+1
+            
+    return(possible)
+c=[0,0,0,0,1,0]
+print(jumpingOnClouds(c))
