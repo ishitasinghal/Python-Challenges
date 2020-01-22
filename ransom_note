@@ -10,15 +10,15 @@ mismatch. The answer is No.
 # https://www.hackerrank.com/challenges/ctci-ransom-note/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=dictionaries-hashmaps
 
 #CODE
-
 def checkMagazine(magazine, note):
     flag = True
-    for i in magazine:
-        if i  not in note:
+    for i in note:
+        if i  not in magazine:
             flag = False
             break
     if(flag==True):
         print("Yes")
     else:
         print("No")
+
 
