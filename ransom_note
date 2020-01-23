@@ -13,12 +13,10 @@ mismatch. The answer is No.
 def checkMagazine(magazine, note):
     flag = True
     for i in note:
-        if i  not in magazine:
+        if i  not in magazine or note.count(i)!=magazine.count(i):
             flag = False
             break
     if(flag==True):
         print("Yes")
     else:
         print("No")
-
-
