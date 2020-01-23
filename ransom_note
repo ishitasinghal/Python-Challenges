@@ -20,3 +20,11 @@ def checkMagazine(magazine, note):
         print("Yes")
     else:
         print("No")
+        
+##Easy way##        
+        
+        
+if(Counter(note)- Counter(magazine))=={}:
+        print("True")
+    else:
+        print("False")
