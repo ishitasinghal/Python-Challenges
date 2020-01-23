@@ -24,7 +24,4 @@ def checkMagazine(magazine, note):
 ##Easy way##        
         
         
-if(Counter(note)- Counter(magazine))=={}:
-        print("True")
-    else:
-        print("False")
+ print(Counter(note)- Counter(magazine))=={}
