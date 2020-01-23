@@ -23,5 +23,12 @@ def checkMagazine(magazine, note):
         
 ##Easy way##        
         
-        
- print(Counter(note)- Counter(magazine))=={}
+         match = 'Yes'
+    for w in range(len(note)):
+        try:
+            magazine.pop(magazine.index(note[w]))
+        except:
+            match = 'No'
+            break
+
+    print(match)
