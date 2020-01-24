@@ -16,10 +16,10 @@ Output:
 
 #CODE
 
-testcases = int(input)
-for _ in range(testcases):
+testcases = input()
+for _ in range(int(testcases)):
     n, k = input().split()
-    array = [int(input) for i in range(int(n))]
+    array = input().split()
     newarray = [j for j in array if(i<int(k))]
     l = []
     for k in newarray:
@@ -33,4 +33,5 @@ for _ in range(testcases):
             else:
                 print("NO")
                 
+    
     
