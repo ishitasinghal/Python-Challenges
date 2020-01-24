@@ -29,6 +29,11 @@ def checkMagazine(magazine, note):
     for key in notdict:
         if key in magdict:
             if(magdict[key]==notdict[key]):
-                print("Yes")
+                continue
+                flag = 1
             else:
-                print("No")
+                flag = 0
+        if(flag==1):
+            print("Yes")
+        else:
+            print("No")
