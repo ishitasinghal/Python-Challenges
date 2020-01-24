@@ -23,15 +23,16 @@ def checkMagazine(magazine, note):
         
 ##Without time out for some lengthy cases.##     
 
-  def checkMagazine(magazine, note):
+ def checkMagazine(magazine, note):
     magdict = dict((i,magazine.count(i)) for i in set(magazine))
     notdict = dict((i,note.count(i)) for i in set(note))
     flag = 0
     for key in notdict:
-       if key in magdict and notdict[key]==magdict[key]:
-           flag = 1
+        if key in magdict and notdict[key]==magdict[key]:
+            flag = 1
         else:
             flag = 0
+            break
     if(flag==1):
         print("Yes")
     else:
