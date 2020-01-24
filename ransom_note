@@ -21,14 +21,13 @@ def checkMagazine(magazine, note):
     else:
         print("No")
         
-##Easy way##        
+##Without time out for some lengthy cases.##        
+   def checkMagazine(magazine, note):
+   magdict = Counter(magazine)
+   notedict = Counter(note)
+   if notedict in magdict:
+       print("Yes")
+    else:
+        print("No")      
         
-         match = 'Yes'
-    for w in range(len(note)):
-        try:
-            magazine.pop(magazine.index(note[w]))
-        except:
-            match = 'No'
-            break
 
-    print(match)
