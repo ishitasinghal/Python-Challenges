@@ -1,0 +1,24 @@
+Problem Statement
+Given an array A of size N. Print all the numbers less than K in the array. 
+The numbers should be such that the difference between every adjacent digit should be 1.
+
+Example:
+Input:
+2
+8 54
+7 98 56 43 45 23 12 8
+10 1000
+87 89 45 235 465 765 123 987 499 655
+
+Output:
+43 45 23 12
+87 89 45 765 123 987
+
+#CODE
+
+testcases = int(input)
+for _ in range(testcases):
+    n, k = input().split()
+    array = [int(input) for i in range(int(n))]
+    newarray = [j for j in array if(i<k)]
+    farray
