@@ -26,8 +26,9 @@ def checkMagazine(magazine, note):
    def checkMagazine(magazine, note):
     magdict = dict((i,magazine.count(i)) for i in set(magazine))
     notdict = dict((i,note.count(i)) for i in set(note))
-    for key in note.keys()):
-        if key in magdict.keys() and magdict[key]==notdict[key]:
-            print("Yes")
-        else:
-            print("No")
+    for key in notdict:
+        if key in magdict:
+            if(magdict[key]==notdict[key]):
+                print("Yes")
+            else:
+                print("No")
