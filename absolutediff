@@ -20,18 +20,15 @@ testcases = input()
 for _ in range(int(testcases)):
     n, k = input().split()
     array = input().split()
-    newarray = [j for j in int(array) if(j<int(k))]
-    l = []
-    for k in newarray:
-        while(k>0):
+    array = [int(i) for i in array]
+    nar = [ j for j in array if j<int(k)]
+    for i in nar:
+        l = []
+        while(int(k)>0):
             l.append(k%10)
             k=k//10
-        for m in range(len(l)-1):
-            if(abs(l[m]-l[m+1])==1):
-                print("DOne")
-                break
-            else:
-                print("NO")
+        print(l)
+
                 
     
 
