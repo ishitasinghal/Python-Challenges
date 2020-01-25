@@ -15,6 +15,7 @@ Output:
 87 89 45 765 123 987
 
 #CODE
+
 testcases = input()
 for _ in range(int(testcases)):
     n, k = input().split()
@@ -22,9 +23,14 @@ for _ in range(int(testcases)):
     array = [int(i) for i in array]
     nar = [ j for j in array if j<int(k)]
     for i in nar:
+        flist = []
         l = []
         while(i>0):
             l.append(i%10)
             i=i//10
-        nl = [x - l[i - 1] for i, x in enumerate(l)][1:]
-        print(nl)
+        nl = [abs(x - l[i - 1]) for i, x in enumerate(l)][1:]
+        if(1 in set(l) and (len(set(nl)))==1):
+            flist.append[i]
+    print(flist)
+            
+
