@@ -20,7 +20,7 @@ testcases = input()
 for _ in range(int(testcases)):
     n, k = input().split()
     array = input().split()
-    newarray = [j for j in array if(i<int(k))]
+    newarray = [j for j in int(array) if(j<int(k))]
     l = []
     for k in newarray:
         while(k>0):
@@ -32,6 +32,9 @@ for _ in range(int(testcases)):
                 break
             else:
                 print("NO")
+                
+    
+
                 
     
     
