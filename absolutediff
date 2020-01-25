@@ -23,13 +23,16 @@ for _ in range(int(testcases)):
     flist = []
     array = [int(i) for i in array]
     nar = [ j for j in array if j<int(k)]
+    print(nar)
     for i in nar:
+        temp = i
         l = []
-        while(i>0):
-            l.append(i%10)
-            i=i//10
-        nl = [abs(x - l[i - 1]) for i, x in enumerate(l)][1:]
-        if(1 in set(l) and (len(set(nl)))==1):
+        while(temp>0):
+            l.append(temp%10)
+            temp=temp//10
+        nl = [abs(x - l[temp - 1]) for temp, x in enumerate(l)][1:]
+        if(1 in set(nl) and (len(set(nl)))==1):
             flist.append(i)
     print(flist)
             
+
