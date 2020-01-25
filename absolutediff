@@ -15,7 +15,6 @@ Output:
 87 89 45 765 123 987
 
 #CODE
-
 testcases = input()
 for _ in range(int(testcases)):
     n, k = input().split()
@@ -27,8 +26,5 @@ for _ in range(int(testcases)):
         while(i>0):
             l.append(i%10)
             i=i//10
-        print(l)
-
-                
-    
-    
+        nl = [x - l[i - 1] for i, x in enumerate(l)][1:]
+        print(nl)
