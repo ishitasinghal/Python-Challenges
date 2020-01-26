@@ -1,0 +1,18 @@
+Problem Statement:
+You are given an array of size N having no duplicate elements. 
+The array can be categorized into following:
+1.  Ascending
+2.  Descending
+3.  Descending Rotated
+4.  Ascending Rotated
+Print which type of array it is and the maximum element of that array.
+
+Input:
+The first line of input contains an integer T denoting the no test cases. 
+Then T test caes follow. Each testcase contains two lines of input. 
+The first line contains an integer N denoting the size of the array. 
+The next line contains N space separated values of the array.
+
+Output:
+For each test case, print the largest element in the array 
+and and integer x denoting the type of the array.
