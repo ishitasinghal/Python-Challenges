@@ -37,4 +37,4 @@ for _ in range(int(testcases)):
     else:
         for d in flist:
             print(d,end=' ')
-    print()
+    print() #to go to the next line
