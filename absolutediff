@@ -30,10 +30,11 @@ for _ in range(int(testcases)):
             l.append(temp%10)
             temp=temp//10
         nl = [abs(x - l[temp - 1]) for temp, x in enumerate(l)][1:]
-        if len(nl) is 0:
-            print("-1")
         if(1 in set(nl) and (len(set(nl)))==1 and nl is not None):
             flist.append(i)
+    if len(flist) is 0:
+        print('-1')
+    else:
         for d in flist:
             print(d,end=' ')
     print()
