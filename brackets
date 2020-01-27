@@ -3,7 +3,8 @@ ns = []
 for i in s:
     if(i=='(' or i=='{' or i=='['):
         ns.append(i)
-    elif(i==')' or i=='}' or i==']'):
+    elif(i==')' and ns[-1]=='(' or i=='[' and ns[-1]==']' or i=='{' and ns[-1]=='}'):
         ns.pop()
-print(ns)
-        
+    else:
+        print("NO")
+print("YES")
