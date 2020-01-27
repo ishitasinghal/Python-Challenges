@@ -1,10 +1,14 @@
 s = "{[(])}"
 ns = []
+flag = 0
 for i in s:
     if(i=='(' or i=='{' or i=='['):
         ns.append(i)
     elif(i==')' and ns[-1]=='(' or i=='[' and ns[-1]==']' or i=='{' and ns[-1]=='}'):
         ns.pop()
     else:
-        print("NO")
-print("YES")
+        flag=1
+if flag == 1:
+    print("NO")
+else:
+    print("YES")
