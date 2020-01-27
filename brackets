@@ -12,4 +12,17 @@ if flag == 1:
     print("NO")
 else:
     print("YES")
+    
+    
+    
+    s = "}][}}(}][))]"
+dict1 = { '{' : '}',
+          '[' : ']',
+          '(' : ')'
+          }
+ns = []
+for i in s:
+    ns.append(i)
+    
+
 
