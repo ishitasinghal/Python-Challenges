@@ -1,0 +1,6 @@
+s = "{[()]}"
+dict1 = {x:s.count(x) for x in s}
+if(dict1['(']==dict1[')'] or dict1['[']==dict1[']'] or dict1['{']==dict1['}']):
+    print("YES")
+else:
+    print("NO")
