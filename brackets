@@ -1,9 +1,9 @@
 s = "{[(])}"
 ns = []
-for i in list(s):
+for i in s:
     if(i=='(' or i=='{' or i=='['):
         ns.append(i)
     elif(i==')' or i=='}' or i==']'):
-        ns.pop(i)
+        ns.pop()
 print(ns)
         
