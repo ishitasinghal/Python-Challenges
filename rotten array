@@ -15,5 +15,17 @@ contains N space separated values of the array.
 Output:
 For each test case, print the largest element in the array and and integer x denoting the type of the array.
 
+Example:
+Input:
+2
+5
+2 1 5 4 3
+5
+3 4 5 1 2
+
+Output:
+5 3
+5 4
+
 CODE
 
