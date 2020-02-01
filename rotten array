@@ -30,6 +30,8 @@ Output:
 CODE
 
 array = input().split()
-for i in range(len(array)-1):
-    nlist.append(
-    
+nlist = []
+for i in range(len(array)-2):
+    nlist.append(array[i+1]-array[i]
+print(nlist)
+
