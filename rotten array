@@ -29,9 +29,9 @@ Output:
 
 CODE
 
-array = input().split()
+array = list(map(int, input().split()))
 nlist = []
-for i in range(len(array)-2):
+for i in range(len(array)-1):
     nlist.append(array[i+1]-array[i])
 print(nlist)
 
