@@ -32,6 +32,6 @@ CODE
 array = input().split()
 nlist = []
 for i in range(len(array)-2):
-    nlist.append(array[i+1]-array[i]
+    nlist.append(array[i+1]-array[i])
 print(nlist)
 
