@@ -29,3 +29,7 @@ Output:
 
 CODE
 
+array = input().split()
+for i in range(len(array)-1):
+    nlist.append(
+    
