@@ -34,4 +34,6 @@ nlist = []
 for i in range(len(array)-1):
     nlist.append(array[i+1]-array[i])
 print(nlist)
+if(nlist.sort()):
+
 
