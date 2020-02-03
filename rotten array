@@ -29,11 +29,10 @@ Output:
 
 CODE
 
-array = list(map(int, input().split()))
-nlist = []
-for i in range(len(array)-1):
-    nlist.append(array[i+1]-array[i])
-print(nlist)
-if(nlist.sort()):
-
+testcases = int(input())
+for _ in range(testcases):
+    l = int(input())
+    a = list(map(int, input().split()))
+    print(a)
+    
 
