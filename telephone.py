@@ -1,3 +1,4 @@
+from itertools import permutations
 dict1 = { 1:['a','b','c'],
           2:['d','e','f'],
           3:['g','h','i'],
@@ -8,4 +9,5 @@ dict1 = { 1:['a','b','c'],
           8:['v','w','x'],
           9:['y','z']
           }
-print(dict1)
+result = [(x,y) for x in dict1[1] for y in dict1[2]]
+print(result)
