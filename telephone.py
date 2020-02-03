@@ -9,5 +9,8 @@ dict1 = { 1:['a','b','c'],
           8:['v','w','x'],
           9:['y','z']
           }
-result = [(x,y) for x in dict1[1] for y in dict1[2]]
-print(result)
+n = input()
+nlist = []
+for i in n:
+    nlist.extend(dict1[int(i)])
+print(nlist)
