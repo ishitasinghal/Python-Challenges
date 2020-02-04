@@ -35,7 +35,16 @@ for _ in range(testcases):
     a = list(map(int, input().split()))
     for i in range(len(a)-2):
         if a[i]<a[i+1]:
-            pass
+            print("Ascending")
+            continue
+        elif a[i]>a[i+1]:
+            print("Descending")
+            
+        
+        
+        
+    
+
         
         
     
