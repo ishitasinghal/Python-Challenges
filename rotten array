@@ -34,13 +34,17 @@ for _ in range(testcases):
     l = int(input())
     a = list(map(int, input().split()))
     for i in range(len(a)-2):
-        if a[i]<a[i+1]:
+        if(x[k+1]-x[k])>0 for k in range(len(x)-1)].count(True) == len(x)-1:
             print("Ascending")
-            continue
-        elif a[i]>a[i+1]:
+        elif   
+[(x[k+1]-x[k])>0 for k in range(len(x)-1)].count(True) == len(x)-1:
             print("Descending")
             
         
+        
+        
+  
+
         
         
     
