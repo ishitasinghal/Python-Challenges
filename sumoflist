@@ -3,8 +3,10 @@ Problem Statement
 Print all possible numbers whose sum adds up to a given number.
 
 CODE
+
 from itertools import permutations
 def f(list1):
-    return(list(permutations(list1)))
+    a = list(permutations(list1))
+    return(a)
 list1 = [1,2,3,4,5]
 print(f(list1))
