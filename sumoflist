@@ -5,5 +5,9 @@ Print all possible numbers whose sum adds up to a given number.
 CODE
 
 from itertools import combinations
+from itertools import combinations
 def f(list1):
     return(list(combinations(list1)))
+list1 = [1,2,3,4,5]
+print(f(list1))
+
