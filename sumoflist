@@ -4,12 +4,9 @@ Print all possible numbers whose sum adds up to a given number.
 
 CODE
 
+import itertools
 def sumoflist(list1):
-    for i in list1:
-        for j in list1:
-            if i+j== 7:
-                nlist1.append(i)
-        nlist2.append(nlist1)
-    return nlist2
+    result = [seq for i in range(len(numbers), 0, -1) for seq in itertools.combinations(numbers, i) if sum(seq) == 10]
+    return result
 list1 = [1, 2, 3, 4]
 print(sumoflist(list1))
