@@ -5,4 +5,8 @@ Print all possible numbers whose sum adds up to a given number.
 CODE
 
 def sumoflist(list1):
-    for i in range
+    for i in list1:
+        for j in list1:
+            if i+j== 7:
+                nlist1.append(i)
+        nlist2.append(nlist1)
