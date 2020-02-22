@@ -6,7 +6,7 @@ CODE
 
 import itertools
 def sumoflist(list1):
-    result = [seq for i in range(len(list1), 0, -1) for seq in itertools.combinations(numbers, i) if sum(seq) == 8]
+    result = [seq for i in range(len(list1), 0, -1) for seq in itertools.combinations(list1, i) if sum(seq) == 7]
     return result
 list1 = [1, 2, 3, 4]
 print(sumoflist(list1))
