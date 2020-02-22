@@ -4,14 +4,5 @@ Print all possible numbers whose sum adds up to a given number.
 
 CODE
 
-from itertools import permutations
-def f(list1):
-    nlist=[]
-    a = list(permutations(list1))
-    for i in a:
-        if(sum(i)==8):
-            nlist.append(i)
-    return nlist
-list1 = [1,2,3,4,5]
-print(f(list1))
-
+def sumoflist(list1):
+    for i in range
