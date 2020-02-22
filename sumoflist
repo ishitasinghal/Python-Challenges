@@ -10,3 +10,6 @@ def sumoflist(list1):
             if i+j== 7:
                 nlist1.append(i)
         nlist2.append(nlist1)
+    return nlist2
+list1 = [1, 2, 3, 4]
+print(sumoflist(list1))
