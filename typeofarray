@@ -19,12 +19,9 @@ and and integer x denoting the type of the array.
 
 arr1 = [1,2,3,4,5]
 arr2 = [5,4,3,2,1]
-flag=1
-for i in range(len(arr1)-2):
-    while(arr[i]<arr[i+1]):
-        flag=0
-if(flag==1):
-    print("Descending")
-else:
-    print("Ascending")
-        
+previous = arr1[0]
+for number in arr1:
+    if number < previous:
+        print("Ascending order")
+    previous = number
+print("Descending order")
