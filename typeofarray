@@ -29,3 +29,17 @@ if(flag==1):
     print("Ascending order")
 else:
     print("Descending order")
+
+Array2
+arr1 = [1,2,3,4,5]
+arr2 = [5,4,3,2,1]
+previous = arr2[0]
+flag=0
+for number in arr2:
+    if previous < number:
+        previous = number
+        flag = 1
+if(flag==1):
+    print("Ascending order")
+else:
+    print("Descending order")
