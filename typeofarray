@@ -20,8 +20,12 @@ and and integer x denoting the type of the array.
 arr1 = [1,2,3,4,5]
 arr2 = [5,4,3,2,1]
 previous = arr1[0]
+flag=0
 for number in arr1:
     if previous < number:
-        print("Ascending order")
-    previous = number
-print("Descending order")
+        previous = number
+        flag = 1
+if(flag==1):
+    print("Ascending order")
+else:
+    print("Descending order")
