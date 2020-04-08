@@ -51,8 +51,6 @@ for i in range(testcases):
     
     g_revolution.sort()
     all_starz.sort()
-    print(g_revolution)
-    print(all_starz)
 
     for i in range(members):
         if(g_revolution[i]-all_starz[i]>=1):
