@@ -40,15 +40,37 @@ Output
 CODE:
 
 testcases = int(input())
-members = int(input())
-g_revolution = [int(x) for x in input().split() for i in range(1)]
-all_starz = [int(x) for x in input().split() for i in range(1)]
-count = 0
+for i in range(testcases):
+    members = int(input())
+    g_revolution = [int(x) for x in input().split() for i in range(1)]
+    all_starz = [int(x) for x in input().split() for i in range(1)]
+    count = 0
+    nc = 0
+    g_new=[]
+    a_new=[]
+    
+    g_revolution.sort()
+    all_starz.sort()
+    print(g_revolution)
+    print(all_starz)
 
-for i in range(members):
-    res1 = max(g_revolution)-max(all_starz)
-    if(res1>0):
-        count = count + 1
-        g_revolution.remove(max(g_revolution))
-        all_starz.remove(max(all_starz))
-print(count)
+    for i in range(members):
+        if(g_revolution[i]-all_starz[i]>=1):
+            count = count+1
+        if(g_revolution[i]-all_starz[i]<1):
+            g_new.append(g_revolution[i])
+            a_new.append(all_starz[i])
+    
+    for m in range(len(g_new)):
+        if(max(g_new)-min(a_new)>=1):
+            nc = nc+1
+            g_new.remove(max(g_new))
+            a_new.remove(min(a_new))
+    
+    print(count+nc)
+
+
+            
+
+            
+    
