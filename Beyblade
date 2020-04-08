@@ -1,0 +1,5 @@
+testcases = int(input())
+members = int(input())
+g_revolution = [int(x) for x input().split() for i in range(1)]
+all_starz = [int(x) for x input().split() for i in range(1)]
+print(all_starz)
