@@ -45,29 +45,18 @@ for i in range(testcases):
     g_revolution = [int(x) for x in input().split() for i in range(1)]
     all_starz = [int(x) for x in input().split() for i in range(1)]
     count = 0
-    nc = 0
+    n = 0
     g_new=[]
     a_new=[]
     
     g_revolution.sort()
     all_starz.sort()
 
-    for i in range(members):
-        if(g_revolution[i]-all_starz[i]>=1):
-            count = count+1
-        if(g_revolution[i]-all_starz[i]<1):
-            g_new.append(g_revolution[i])
-            a_new.append(all_starz[i])
-    
-    for m in range(len(g_new)):
-        if(max(g_new)-min(a_new)>=1):
-            nc = nc+1
-            g_new.remove(max(g_new))
-            a_new.remove(min(a_new))
-    
-    print(count+nc)
-
-
+    for i in g_revolution:
+        if(i>all_starz[n]):
+            count = count + 1
+            n = n+1
+    print(count)
             
 
             
