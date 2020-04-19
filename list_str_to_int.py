@@ -7,3 +7,17 @@ Input: ["1, 3, 4, 7, 13", "1, 2, 4, 13, 15"]
 Output: 1,4,13
 Input: ["1, 3, 9, 10, 17, 18", "1, 4, 9, 10"]
 Output: 1,9,10
+
+ 
+
+CODE
+
+a = ["1, 3, 4, 7, 13", "1, 2, 4, 13, 15"]
+li = []
+a1 = a[0].split(',')
+a2 = a[1].slit(',')
+arr1 = [int(a) for a in a1]
+arr2 = [int(a) for a in a2]
+for i in arr1:
+    if i in arr2:
+        li.append(i)
