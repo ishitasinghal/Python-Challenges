@@ -21,9 +21,12 @@ def FindIntersection(strArr):
   for i in arr1:
       if i in arr2:
           li.append(i)
-
-  nli = [str(a) for a in li]
-  print("," . join(nli))
+  
+  if(len(li)==0):
+    print("false")
+  else:
+    nli = [str(a) for a in li]
+    print("," . join(nli))
 
 
 # keep this function call here 
