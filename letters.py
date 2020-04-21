@@ -12,14 +12,18 @@
 
 def LetterChanges(str):
   nstr = ""
+  nnstr = ""
   for i in str:
     if(i.isalpha()):
       nstr = nstr+chr(ord(i) + 1) 
-    elif(i.isspace()):
+    else:
       nstr = nstr+i
-
+    
+  vowels = ['a', 'e', 'i', 'o', 'u', 'y']
+  nnstr = ''.join([c.upper() if c in vowels else c for c in nstr])
+    
   
-  return nstr
+  return nnstr
 
 # keep this function call here 
 print(LetterChanges(input()))
