@@ -19,7 +19,7 @@ def LetterChanges(str):
     else:
       nstr = nstr+i
     
-  vowels = ['a', 'e', 'i', 'o', 'u', 'y']
+  vowels = ['a', 'e', 'i', 'o', 'u']
   nnstr = ''.join([c.upper() if c in vowels else c for c in nstr])
     
   
