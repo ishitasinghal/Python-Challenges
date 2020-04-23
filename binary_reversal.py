@@ -12,9 +12,9 @@
     
 def BinaryReversal(str):
   a= int(str)
-  bin1 = bin(a)
-  fin = format(bin1, '08b')
-  return(int(bin1, 2))
+  bin1 = bin(a).replace("0b","")
+  # fin = '{0:08b}'.format(bin1)
+  return(bin1)
 
 # keep this function call here 
 print(BinaryReversal(input()))
