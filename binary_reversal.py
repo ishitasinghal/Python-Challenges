@@ -13,8 +13,10 @@
 def BinaryReversal(str):
   a= int(str)
   bin1 = bin(a).replace("0b","")
-  # fin = '{0:08b}'.format(bin1)
-  return(bin1)
+  fin = bin1.zfill(8)
+  rev = str(fin)
+  nstr = rev[:-1]
+  return(nstr)
 
 # keep this function call here 
 print(BinaryReversal(input()))
