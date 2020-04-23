@@ -10,11 +10,11 @@
 
 # CODE:
     
- def BinaryReversal(str):
+def BinaryReversal(str):
   a= int(str)
   bin1 = bin(a)
-  fin = format(bin1, '')
-  return str
+  fin = format(bin1, '08b')
+  return(int(bin1, 2))
 
 # keep this function call here 
 print(BinaryReversal(input()))
