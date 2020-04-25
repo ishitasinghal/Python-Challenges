@@ -10,15 +10,17 @@
 
 # CODE:
     
-def btd(n): 
-    return int(n,2) 
 def BinaryReversal(str):
-  a= int(str)
-  bin1 = bin(a).replace("0b","")
-  fin = bin1.zfill(8)
-  # rev = str(fin)
-  nstr = fin[::-1]
-  return(btd((nstr)))
+  a= bin(int(str))
+  temp=a[2:]
+  zeros=len(temp)
+  mod=8
+  if zeros%mod!=0:
+    while zeros//mod!=0:
+      mod=mod+8
+  temp=temp[::-1]+"0"*(mod-zeros)
+  temp=int("0b"+temp,2)
+  return(temp)
 
 # keep this function call here 
-print(BinaryReversal(input()))
+print(BinaryReversal(input()))  
