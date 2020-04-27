@@ -8,3 +8,16 @@ Output: time
 Input: "I love dogs"
 Output: love
 
+CODE
+
+def LongestWord(sen):
+  c = 0
+  nstr = ""
+  for i in sen:
+    if(i.isalpha()==True):
+      c = c+1
+      nstr = nstr+i
+  return sen
+
+# keep this function call here 
+print(LongestWord(input()))
