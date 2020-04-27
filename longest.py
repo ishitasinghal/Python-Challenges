@@ -11,12 +11,11 @@ Output: love
 CODE
 
 def LongestWord(sen):
-  c = 0
-  nstr = ""
-  for i in sen:
-    if(i.isalpha()==True):
-      c = c+1
-      nstr = nstr+i
+  list1 = sen.split()
+  for i in list1:
+    for j in i:
+      if(j.isalpha()):
+        
   return sen
 
 # keep this function call here 
