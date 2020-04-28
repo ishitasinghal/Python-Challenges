@@ -26,3 +26,24 @@ for i in range(testcases):
 
     print(string1)
 
+    
+#Solution 2
+
+import random
+import string
+testcases = int(input())
+for i in range(testcases):
+    n, a, b = input().split()
+    string1 = ""
+    while(len(string1)<int(b)):
+        string1 = string1 + (random.choice(string.ascii_lowercase))
+    while(len(string1)<int(a)):
+        string1 = string1+ string1[random.randrange(len(string1))]
+    for i in range(int(n) - int(a)):
+        string1 = string1 + string1[i]
+    print(string1)
+
+
+
+
+
