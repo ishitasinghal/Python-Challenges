@@ -7,12 +7,18 @@
 
 # CODE:
 
+#Solution 1
+
 import random
 import string
 n, a, b = input().split()
 string1 = ""
-while(len(string1)<int(a)):
+while(len(string1)<int(b)):
     string1 = string1 + (random.choice(string.ascii_lowercase))
-# print(string1)
-res = [string1[i: j] for i in range(len(string1)) for j in range(i + 1, len(string1) + 1) if len(string1[i:j]) == int(b)]
-print(res)
+for i in range(int(a)-int(b)):
+    string1=string1+string1[i]
+
+for i in range(int(n)-int(a)):
+    string1=string1+string1[i]
+
+print(string1)
