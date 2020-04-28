@@ -13,4 +13,6 @@ n, a, b = input().split()
 string1 = ""
 while(len(string1)<int(a)):
     string1 = string1 + (random.choice(string.ascii_letters))
-print(string1)
+# print(string1)
+res = [string1[i: j] for i in range(len(string1)) for j in range(i + 1, len(string1) + 1) if len(string1[i:j]) == int(b)]
+print(res)
