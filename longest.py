@@ -11,18 +11,15 @@ Output: love
 CODE
 
 def LongestWord(sen):
-  nstr = ""
-  res=0
-  list1 = sen.split()
-  for i in list1:
-    for j in i:
-      if(j.isalpha()):
-        nstr = nstr+j
-    res = max(res, len(nstr))
-    print(res)
-        
+  nsen=""
+  for i in sen:
+    if(i.isalpha() or i==' '):
+      nsen = nsen+i
+  list1 = nsen.split()
 
-  return sen
+  # res = list(map(lambda i: len(i), list1))
+  # print(res)
+  # return sen
 
 # keep this function call here 
 print(LongestWord(input()))
