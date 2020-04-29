@@ -12,11 +12,14 @@ CODE
 
 def LongestWord(sen):
   nstr = ""
+  res=0
   list1 = sen.split()
   for i in list1:
     for j in i:
       if(j.isalpha()):
         nstr = nstr+j
+    res = max(res, len(nstr))
+    print(res)
         
 
   return sen
