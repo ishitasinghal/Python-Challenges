@@ -16,10 +16,8 @@ def LongestWord(sen):
     if(i.isalpha() or i==' '):
       nsen = nsen+i
   list1 = nsen.split()
-
-  # res = list(map(lambda i: len(i), list1))
-  # print(res)
-  # return sen
+  n = max(list1,key = lambda x:len(x))
+  return n
 
 # keep this function call here 
 print(LongestWord(input()))
