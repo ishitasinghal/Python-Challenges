@@ -13,7 +13,7 @@ CODE
 def LongestWord(sen):
   nsen=""
   for i in sen:
-    if(i.isalpha() or i==' '):
+    if(i.isalpha() or i.isnumeric() or i==' '):
       nsen = nsen+i
   list1 = nsen.split()
   n = max(list1,key = lambda x:len(x))
