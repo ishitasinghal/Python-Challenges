@@ -2,18 +2,13 @@
 # ou are given a string S.
 # Your task is to find the indices of the start and end of k string in S .
 
-import re
-
-s = input()
+S = input()
 k = input()
-index = 0
-
-if re.search(k, s):
-    while index+len(k) < len(s):
-        m = re.search(k, s[index:]) 
-        
-        print("({0}, {1})".format(index+m.start(), index+m.end()-1)) 
-        
-        index += m.start() 
-else:
-    print((-1, -1))
+import re
+pattern = re.compile(k)
+r = pattern.search(S)
+if not r: 
+    print("(-1, -1)")
+while r:
+    print("({0}, {1})".format(r.start(), r.end() - 1))
+    r = pattern.search(S,r.start() + 1)
