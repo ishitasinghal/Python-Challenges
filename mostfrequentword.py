@@ -3,4 +3,4 @@ list1 = string.split()
 fre = []
 for i in list1:
     fre.append(list1.count(i))
-print(str(list(zip(list1, fre))))
+print(dict(list(zip(list1, fre))))
