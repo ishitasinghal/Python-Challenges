@@ -16,4 +16,5 @@
 
 st = "abaaba"
 stlist = [st[i: j] for i in range(len(st)) for j in range(i + 1, len(st) + 1)]
-print(stlist)
+stset = set(stlist)
+print(stset)
