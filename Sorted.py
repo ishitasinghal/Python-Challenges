@@ -1,5 +1,5 @@
 #this basic program uses the sorted built-in facility in python.
-#Problrm statement
+#Problem statement
 #Print the N lines of the sorted table. Each line should contain the space separated elements.
 #Check out the given link further :
 #https://www.hackerrank.com/challenges/python-sort-sort/problem
