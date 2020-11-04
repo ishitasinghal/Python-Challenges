@@ -5,7 +5,6 @@
 #Condition 1:
 #All the integers in the list are positive.
 #Condition 2: any integer is a palindromic integer.
-
 #palindrome number is the number whose reverse is equal to the number itself.
 
 #Code
