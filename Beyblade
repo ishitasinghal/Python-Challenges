@@ -1,6 +1,5 @@
 Source Link:https://www.techgig.com/codegladiators/question/bk01YUVjQjVyeVp5Umh3RkpINHpuamduTk1PeGxzSXhmRmtJS3pSUi8vdnQzS3ErazhkQnJWZkpGTkt0NWVuRQ==/1
 
-
 Problem Statement
 
 Team G-Revolution needs help with the device. Tyson has heard about 
@@ -57,7 +56,3 @@ for i in range(testcases):
             count = count + 1
             n = n+1
     print(count)
-            
-
-            
-    
